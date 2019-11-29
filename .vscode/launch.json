@@ -1,16 +1,18 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
+    "version": "1.4.0",
     "configurations": [
         {
-            "name": "Cocos-Debug",
-            "type": "cocos",
-            "request": "attach",
-            "port": 50869,
-            "address": "localhost",
-            "cwd": "${workspaceRoot}"
+            "name": "Creator Debug: Launch Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:7456",
+            "sourceMaps": true,
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "diagnosticLogging": false,
+            "pathMapping": {
+                "/preview-scripts/assets": "${workspaceRoot}/temp/quick-scripts/assets",
+                "/": "${workspaceRoot}"
+            }    
         }
     ]
 }
